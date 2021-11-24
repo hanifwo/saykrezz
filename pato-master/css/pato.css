@@ -1,0 +1,11 @@
+.p-b-158 {
+    padding-bottom: 300px;
+}
+.p-t-135 {
+    padding-top: 300px;
+}
+.header-fixed .wrap-menu-header {
+    position: fixed;
+    height: 100px;
+    background: rgba(27, 27, 27, 0.54);
+  }
