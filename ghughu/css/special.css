@@ -1,0 +1,30 @@
+/* CONTENT */
+#fh5co-featured-menu .fh5co-heading, #fh5co-gallery .fh5co-heading, #fh5co-reservation-form .fh5co-heading {
+    margin-bottom: 170px;
+}
+#fh5co-featured-menu .fh5co-item-wrap, #fh5co-gallery .fh5co-item-wrap, #fh5co-reservation-form .fh5co-item-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.product h1 {
+    font-weight: 700;
+    color: #DC2F02;
+  }
+.img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+.fh5co-section {
+    padding: 7em 0;
+    background-color: #FBC620;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row h4 {
+    font-family: "Merriweather", "Serif";
+    font-size: 17px;
+    font-weight: 100;
+}
+  
