@@ -12,6 +12,13 @@
   scroll-behavior: smooth;
 }
 
+table img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #f6f9ff;

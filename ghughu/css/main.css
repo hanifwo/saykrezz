@@ -838,7 +838,7 @@ table tr td:first-of-type {
   /* line 26, ../scss/layout/responsive/_laptop.scss */
   .navbar-default .navbar-brand {
     font-size: 48px;
-    padding: 40px;
+    padding: 0px;
   }
 
   /* line 32, ../scss/layout/responsive/_laptop.scss */

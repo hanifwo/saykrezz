@@ -2,7 +2,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
 <div class="d-flex align-items-center justify-content-between">
-  <a href="forms-layouts.php" class="logo d-flex align-items-center">
+  <a href="../index.php" class="logo d-flex align-items-center">
     <img src="assets/img/logo.png" alt="">
     <span class="d-none d-lg-block">Saykrezz</span>
   </a>
@@ -12,9 +12,9 @@
 <ul class="d-flex align-items-center">
     <li class="nav-item dropdown pe-3">
 
-      <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+      <!-- <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
         <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
-      </a><!-- End Profile Iamge Icon -->
+      </a>End Profile Iamge Icon -->
 
       <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
 

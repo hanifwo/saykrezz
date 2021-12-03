@@ -1,4 +1,14 @@
+<?php
 
+require_once("action/session_check.php");
+
+// Cek Sudah Login
+if ( $sessionStatus == false) {
+  header("Location: pages-login.php");
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +59,7 @@
               <h5 class="card-title">Tambah Barang</h5>
 
               <!-- Vertical Form -->
-              <form action="action/action_add.php" method="POST" class="row g-3">
+              <form action="action/add_produk.php" method="POST" enctype="multipart/form-data" class="row g-3">
                 <div class="col-12">
                   <label for="foto" class="form-label">Foto Produk</label>
                   <input type="file" class="form-control" id="foto" name="foto">
@@ -89,19 +99,19 @@
                   <legend class="col-form-label col-sm-2 pt-0">Ukuran</legend>
                   <div class="col-sm-10">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="ukuran" id="100" value="100">
+                      <input class="form-check-input" type="radio" name="ukuran" id="100" value="100gram">
                       <label class="form-check-label" for="100">
                         100 gram
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="ukuran" id="150" value="150">
+                      <input class="form-check-input" type="radio" name="ukuran" id="150" value="150gram">
                       <label class="form-check-label" for="150">
                         150 gram
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="ukuran" id="200" value="200">
+                      <input class="form-check-input" type="radio" name="ukuran" id="200" value="200gram">
                       <label class="form-check-label" for="200">
                         200 gram
                       </label>

@@ -1,6 +1,12 @@
 <?php
 
 require_once("action/connection.php");
+require_once("action/session_check.php");
+
+// Cek Sudah Login
+if ( $sessionStatus == false) {
+  header("Location: pages-login.php");
+}
 
 $query = "SELECT * FROM produk";
 
@@ -28,6 +34,11 @@ $result = mysqli_query($mysqli, $query);
 
 <?php include 'asset/style.php'; ?>
 
+  <script type="text/javascript">
+    function confirm_delete () {
+      return confirm("Anda Yakin?");
+    }
+  </script>
   <!-- =======================================================
   * Template Name: NiceAdmin - v2.1.0
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -50,7 +61,8 @@ $result = mysqli_query($mysqli, $query);
       
       <h1>Daftar Barang</h1>
     
-    </div><!-- End Page Title -->
+    </div
+    ><!-- End Page Title -->
 
     <section class="section">
       <div class="row">
@@ -87,9 +99,14 @@ $result = mysqli_query($mysqli, $query);
                   
                   $i= 1;
                   foreach ($result as $produk) {
+
+                    if ( $produk['foto'] == null || empty($produk['foto']) ) {
+                        $produk['foto'] = 'storage/default.png';
+                    }
+
                     echo '<tr>
                             <th scope="row">' . $i++ . '</th>
-                            <td>' . $produk["foto"] . '</td>
+                            <td><img src="action/' . $produk["foto"] . '"/></td>
                             <td>' . $produk["id_produk"] . '</td>
                             <td>' . $produk["nama_produk"] . '</td>
                             <td>' . $produk["rasa"] . '</td>
@@ -99,8 +116,8 @@ $result = mysqli_query($mysqli, $query);
                             <td>' . $produk["varian"] . '</td>
                             <td>
 
-                                                <a href="form_edit_siswa.php?nis=' . $produk["id_produk"] . '">Edit</a>
-                                                <a href="delete_siswa.php?nis=' . $produk["id_produk"] . '" onclick="return confirm_delete()"">Delete</a>
+                                                <a href="form_edit_produk.php?id_produk=' . $produk["id_produk"] . '">Edit</a>
+                                                <a href="action/delete_produk.php?id_produk=' . $produk["id_produk"] . '" onclick="return confirm_delete()"">Delete</a>
 
                                             </td>
                           </tr>';
@@ -151,6 +168,7 @@ $result = mysqli_query($mysqli, $query);
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
 </body>
 
