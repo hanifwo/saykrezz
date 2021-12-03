@@ -32,6 +32,9 @@ require_once("dashboard/action/session_check.php");
     <!-- Font Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
     <!-- Popup Images -->
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 
@@ -43,7 +46,7 @@ require_once("dashboard/action/session_check.php");
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/special.css">
-
+    
 </head>
 
 <body>
@@ -83,9 +86,9 @@ require_once("dashboard/action/session_check.php");
                     <div class="collapse navbar-collapse" id="top-navigation-bar">
                         <img src="images/logo.png" style="width: 10%; margin-left: 11px;" alt="">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">about Us</a></li>
-                            <li><a href="contact.html">Get in Touch</a></li> 
+                            <li class="active"><a href="index.php">Home</a></li>
+                            <li><a href="about.php">about Us</a></li>
+                            <li><a href="contact.php">Get in Touch</a></li> 
                             <?php if ( $sessionStatus == true ) :?>                          
                             <li><a href="dashboard/action/logout.php">Logout</a></li>
                             <?php endif ; ?>                       
@@ -221,16 +224,14 @@ require_once("dashboard/action/session_check.php");
                             <div class="service clearfix">
                                 <div class="col-sm-4 col-md-5">
                                     <h1 class="service-number">2</h1>
-                                    <!-- <img src="images/content/snack3.png" style="width:48%;" alt=""> -->
+                                    <img src="images/content/snack3.png" style="width:48%;" alt="">
                                 </div>
                                 <div class="col-sm-8 col-md-7">
                                     <h2>PSD <span class="thin">2</span> HTML conversion</h2>
-                                    <img src="images/content/snack3.png" style="width:48%;" alt="">
                                     <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                     consequat.</p>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -258,104 +259,7 @@ require_once("dashboard/action/session_check.php");
                 </div>
             </div>            
         </section>
-        <!-- Menu Section -->
-        <!-- <section class="product">
-            <div class="container py-5">
-                <div class="row py-5">
-                    <div class="col-lg-12 m-auto text-center">
-                        <h1>Our Beloved Products</h1>
-                        <h6>Browse Our Favorite Products</h6>
-                   </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="card border-0 bg-light">
-                            <div class="card-body">
-                                <img src="images/content/snack1 (1).jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <h6>Snacks</h6>
-                        <p>$092.1</p>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="card border-0 bg-light">
-                            <div class="card-body">
-                                <img src="images/content/snack1 (1).jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <h6>Snacks</h6>
-                        <p>$092.1</p>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="card border-0 bg-light">
-                            <div class="card-body">
-                                <img src="images/content/snack1 (1).jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <h6>Snacks</h6>
-                        <p>$092.1</p>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="card border-0 bg-light">
-                            <div class="card-body">
-                                <img src="images/content/snack1 (1).jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <h6>Snacks</h6>
-                        <p>$092.1</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- TEST -->
-        <!-- <div id="fh5co-featured-menu" class="fh5co-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 fh5co-heading animate-box text-center">
-                        <h1>Our Delicous Menu</h1>
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis. Ad magni perspiciatis, voluptatum repellat.</h4>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-                        <div class="fh5co-item animate-box">
-                            <img src="images/content/contoh.png" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-                            <h3>Bake Potato Pizza</h3>
-                            <span class="fh5co-price">$20<sup>.50</sup></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-                        </div>
-                        <div class="fh5co-item animate-box">
-                            <img src="images/content/snack4.jpg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-                            <h3>Bake Potato Pizza</h3>
-                            <span class="fh5co-price">$20<sup>.50</sup></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
-                        <div class="fh5co-item margin_top animate-box">
-                            <img src="images/content/snack4.jpg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-                            <h3>Salted Fried Chicken</h3>
-                            <span class="fh5co-price">$19<sup>.00</sup></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-                        </div>
-                        <div class="fh5co-item animate-box">
-                            <img src="images/content/snack4.jpg" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
-                            <h3>Bake Potato Pizza</h3>
-                            <span class="fh5co-price">$20<sup>.50</sup></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        
 
         <!-- CTA section starts -->
         <section id="cta" class="cta page">
@@ -365,7 +269,11 @@ require_once("dashboard/action/session_check.php");
                         <h1>Let Us Help</h1>
                     </div>
                     <div class="col-sm-6">
-                        <button class="btn btn-block custom-button">Get In Touch</button>
+                    <a href="https://api.whatsapp.com/send?phone=6285331775007&text=Halo%20Bu%20Rhima%20Saya%20mau%20beli%0AStik%20Krispi%20pedas%2Foriginal%3D%0AKripik%20Daun%20Sirih%3D%0ALadrang%20Malaysia%3D%0AKuping%20Gajah%3D">
+                        <button class="btn btn-block custom-button">
+                            Get In Touch
+                        </button>
+                    </a>
                     </div>
                 </div><!-- End: .row -->
             </div><!-- End: .container-->
@@ -381,14 +289,10 @@ require_once("dashboard/action/session_check.php");
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="footer-link footer-link-1">
-                                    <h4>Create Free Account</h4>
+                                    <h4>Follow Us On Social Media</h4>
                                     <ul>
-                                        <li><a href="#">View courses</a></li>
-                                        <li><a href="#">Discuss</a></li>
-                                        <li><a href="#">Suggest course</a></li>
-                                        <li><a href="#">View courses</a></li>
-                                        <li><a href="#">Discuss</a></li>
-                                        <li><a href="#">Suggest course</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Facebook</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -408,7 +312,6 @@ require_once("dashboard/action/session_check.php");
                         </div>
                     </div>
                     <div class="col-md-5 col-md-offset-1 footer-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         <span>&copy; 2016 G&amp;G. Theme By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></span>
                     </div> 
                 </div>
@@ -435,7 +338,7 @@ require_once("dashboard/action/session_check.php");
     <script src="js/gmaps.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
+    
 <!-- SCRIPTS ENDS -->
 </body>
 

@@ -73,9 +73,9 @@
                     <div class="collapse navbar-collapse" id="top-navigation-bar">
                         <img src="images/logo.png" style="width: 10%; margin-left: 11px;" alt="">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">about Us</a></li>
-                            <li><a href="contact.html">Get in Touch</a></li>                            
+                            <li class="active"><a href="index.php">Home</a></li>
+                            <li><a href="about.php">about Us</a></li>
+                            <li><a href="contact.php">Get in Touch</a></li>                            
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
